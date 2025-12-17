@@ -31,7 +31,7 @@ Thư mục chứa mã nguồn chính (Source Code) để triển khai mô hình.
         2.  `no-ar`: Mô hình lược bỏ thành phần Auto-regressive (AR).
         3.  `no-skip`: Mô hình lược bỏ thành phần Skip-RNN.
         4.  `no-cnn`: Mô hình lược bỏ thành phần Convolutional Layer.
-    * 📄 **File `history`**: Trong mỗi thư mục con sẽ có file này, dùng để lưu lại log quá trình huấn luyện và sự thay đổi của các chỉ số (metrics/loss) qua từng epoch.
+    * 📄 **Các File `history.csv`**: Trong mỗi thư mục con sẽ có các file này, dùng để lưu lại log quá trình huấn luyện và sự thay đổi của các chỉ số (metrics/loss) qua từng epoch. Tất cả 64 mô hình đều có riêng 1 file history.
 
 ### 2. `Plots/`
 * Thư mục chứa các tệp hình ảnh (.png/.jpg) biểu diễn các biểu đồ trực quan hóa kết quả (Visualization), giúp so sánh hiệu suất giữa các mô hình.
