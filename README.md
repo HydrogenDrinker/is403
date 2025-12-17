@@ -37,5 +37,5 @@ Thư mục chứa mã nguồn chính (Source Code) để triển khai mô hình.
 * Thư mục chứa các tệp hình ảnh (.png/.jpg) biểu diễn các biểu đồ trực quan hóa kết quả (Visualization), giúp so sánh hiệu suất giữa các mô hình.
 
 ### 3. `reconstructed_logs/`
-* **Mục đích:** Do quá trình huấn luyện ban đầu được nhóm thực hiện trực tiếp trên Terminal, thư mục này chứa các file **Jupyter Notebook (.ipynb)** nhằm tái hiện lại các log kết quả đó để thuận tiện cho việc theo dõi và báo cáo.
+* **Mục đích:** Do quá trình huấn luyện ban đầu được nhóm thực hiện trực tiếp trên Terminal, thư mục này chứa các file **Jupyter Notebook (.ipynb)** nhằm tái hiện lại các log kết quả đó từ history.csv để thuận tiện cho việc báo cáo.
 * **Cấu trúc:** Tương tự như thư mục `save`, các notebook này cũng được chia thành **4 file** tương ứng với 4 biến thể mô hình (`Full`, `no-ar`, `no-skip`, `no-cnn`).
