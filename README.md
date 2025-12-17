@@ -52,5 +52,6 @@ This project is based on the method proposed in the following paper:
 > SIGIR 2018. [Link to arXiv](https://arxiv.org/abs/1703.07015)
 
 ### 2. Acknowledgements
-We utilized the original source code provided by the authors to reproduce the results. The core model implementation is taken from the following:
-* **Repository:** [https://github.com/fbadine/LSTNet](https://github.com/fbadine/LSTNet)
+We utilized the original source code and datasets provided by the authors to reproduce the results. The core model implementation is taken from the following:
+* **Source Code:** [https://github.com/fbadine/LSTNet](https://github.com/fbadine/LSTNet)
+* **Datasets:** [https://github.com/laiguokun/multivariate-time-series-data](https://github.com/laiguokun/multivariate-time-series-data)
