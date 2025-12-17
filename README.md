@@ -1,7 +1,3 @@
-# LSTNet Time Series Forecasting Project
-
-Dự án triển khai và đánh giá mô hình LSTNet (Long- and Short-term Time-series Networks) trên các tập dữ liệu chuỗi thời gian.
-
 ## 📂 Cấu trúc dự án (Project Structure)
 
 Dưới đây là sơ đồ tổ chức thư mục và giải thích chi tiết chức năng của từng thành phần trong dự án:
@@ -49,7 +45,8 @@ The primary objective of this project is to reproduce and evaluate the performan
 This project is based on the method proposed in the following paper:
 > **Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks**
 > *Guokun Lai, Wei-Cheng Chang, Yiming Yang, Hanxiao Liu.*
-> SIGIR 2018. [Link to arXiv](https://arxiv.org/abs/1703.07015)
+> SIGIR 2018.
+> [Link to arXiv](https://arxiv.org/abs/1703.07015)
 
 ### 2. Acknowledgements
 We utilized the original source code and datasets provided by the authors to reproduce the results. The core model implementation is taken from the following:
