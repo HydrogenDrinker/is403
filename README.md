@@ -39,3 +39,18 @@ Thư mục chứa mã nguồn chính (Source Code) để triển khai mô hình.
 ### 3. `reconstructed_logs/`
 * **Mục đích:** Do quá trình huấn luyện ban đầu được nhóm thực hiện trực tiếp trên Terminal, thư mục này chứa các file **Jupyter Notebook (.ipynb)** nhằm tái hiện lại các log kết quả đó từ history.csv để thuận tiện cho việc báo cáo.
 * **Cấu trúc:** Tương tự như thư mục `save`, các notebook này cũng được chia thành **4 file** tương ứng với 4 biến thể mô hình (`Full`, `no-ar`, `no-skip`, `no-cnn`).
+
+## 🔗 Acknowledgements
+This project was conducted as part of the coursework for **IS403** at **[University of Information Technology - Vietnam National University]**.
+
+The primary objective of this project is to reproduce and evaluate the performance of the LSTNet model based on the original paper.
+
+### 1. Original Paper
+This project is based on the method proposed in the following paper:
+> **Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks**
+> *Guokun Lai, Wei-Cheng Chang, Yiming Yang, Hanxiao Liu.*
+> SIGIR 2018. [Link to arXiv](https://arxiv.org/abs/1703.07015)
+
+### 2. Acknowledgements
+We utilized the original source code provided by the authors to reproduce the results. The core model implementation is taken from the following:
+* **Repository:** [https://github.com/fbadine/LSTNet](https://github.com/fbadine/LSTNet)
