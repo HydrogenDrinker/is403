@@ -1,1 +1,41 @@
-# is403
+# LSTNet Time Series Forecasting Project
+
+Dự án triển khai và đánh giá mô hình LSTNet (Long- and Short-term Time-series Networks) trên các tập dữ liệu chuỗi thời gian.
+
+## 📂 Cấu trúc dự án (Project Structure)
+
+Dưới đây là sơ đồ tổ chức thư mục và giải thích chi tiết chức năng của từng thành phần trong dự án:
+
+```text
+├── LSTNet/                     # Thư mục mã nguồn chính (Source Code)
+│   ├── data/                   # Chứa 4 bộ dữ liệu đầu vào
+│   └── save/                   # Lưu trữ kết quả huấn luyện (Checkpoints & Logs)
+│       └── [Model_Variants]    # (Chi tiết bên dưới)
+├── Plots/                      # Chứa các biểu đồ trực quan hóa kết quả (Images)
+└── reconstructed_logs/         # Notebooks tái hiện quá trình huấn luyện
+```
+
+## 📂 Chi tiết cấu trúc thư mục
+
+Dưới đây là mô tả chi tiết về chức năng và nội dung của từng thư mục trong dự án:
+
+### 1. `LSTNet/`
+Thư mục chứa mã nguồn chính (Source Code) để triển khai mô hình.
+
+* **`data/`**:
+    * Chứa **04 bộ dữ liệu** chuỗi thời gian được sử dụng cho các thực nghiệm trong dự án.
+* **`save/`**:
+    * Nơi lưu trữ kết quả huấn luyện (checkpoints) của tổng cộng **64 mô hình LSTNet**.
+    * Các mô hình này được chia thành **4 nhóm biến thể** kiến trúc để thực hiện *Ablation Study* (nghiên cứu lược bỏ):
+        1.  `Full`: Mô hình LSTNet đầy đủ các thành phần.
+        2.  `no-ar`: Mô hình lược bỏ thành phần Auto-regressive (AR).
+        3.  `no-skip`: Mô hình lược bỏ thành phần Skip-RNN.
+        4.  `no-cnn`: Mô hình lược bỏ thành phần Convolutional Layer.
+    * 📄 **File `history`**: Trong mỗi thư mục con sẽ có file này, dùng để lưu lại log quá trình huấn luyện và sự thay đổi của các chỉ số (metrics/loss) qua từng epoch.
+
+### 2. `Plots/`
+* Thư mục chứa các tệp hình ảnh (.png/.jpg) biểu diễn các biểu đồ trực quan hóa kết quả (Visualization), giúp so sánh hiệu suất giữa các mô hình.
+
+### 3. `reconstructed_logs/`
+* **Mục đích:** Do quá trình huấn luyện ban đầu được nhóm thực hiện trực tiếp trên Terminal, thư mục này chứa các file **Jupyter Notebook (.ipynb)** nhằm tái hiện lại các log kết quả đó để thuận tiện cho việc theo dõi và báo cáo.
+* **Cấu trúc:** Tương tự như thư mục `save`, các notebook này cũng được chia thành **4 file** tương ứng với 4 biến thể mô hình (`Full`, `no-ar`, `no-skip`, `no-cnn`).
